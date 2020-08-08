@@ -44,12 +44,13 @@ public class Student {
 		}
 		
 		Student s =(Student)obj1;
-		boolean isequal = this.age==s.age;
+		boolean isequal = this.rollno==s.rollno; 
 		return isequal;
 	}
 
 	@Override
 	public int hashCode() {
-		return age;
+		int hashcode = rollno.hashCode();
+		return rollno;
 	}
 }
