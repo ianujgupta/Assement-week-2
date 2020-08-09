@@ -1,4 +1,4 @@
-package org.dxctraining.libraryapp.authormgt.entities;
+package org.dxctraining.library.bookmgt.entities;
 
 public class Author {
 	private String id;
