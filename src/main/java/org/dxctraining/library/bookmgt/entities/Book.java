@@ -62,7 +62,7 @@ public class Book {
 		}
 		
 		Book that =(Book)obj;
-		boolean isequal = this.id==that.id;
+		boolean isequal = this.id.equals(that.id);
 		return isequal;
 	}
 }
