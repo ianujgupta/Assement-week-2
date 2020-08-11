@@ -2,6 +2,8 @@ package org.dxctraining.HotelManagement.ui;
 
 import java.util.List;
 
+import javax.annotation.PostConstruct;
+
 import org.dxctraining.HotelManagement.entities.Guest;
 import org.dxctraining.HotelManagement.services.IGuestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class GuestUi {
 	@Autowired
 	private IGuestService guestservice;
-	
+	@PostConstruct
 	private void runApp() {
 		Guest guest1 = new Guest("Anuj", "1");
 		Guest guest2 = new Guest("Ankit", "2");
